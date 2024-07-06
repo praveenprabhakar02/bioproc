@@ -63,7 +63,6 @@ fourier = fn.fft(sine_pad, fs=1000)
 filt_emg = fn.iir(emg,plot='No')
 
 #plotting
-
 plt.plot(t, emg, label="Raw EMG")
 ```
 
