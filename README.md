@@ -63,17 +63,8 @@ fourier = fn.fft(sine_pad, fs=1000)
 filt_emg = fn.iir(emg,plot='No')
 
 #plotting
-plt.figure(figsize=(12,6))
-t = np.arange(0,3.5,1/1000)
-plt.subplot(211)
+
 plt.plot(t, emg, label="Raw EMG")
-plt.ylabel("Amplitude")
-plt.legend()
-plt.subplot(212)
-plt.plot(t,filt_emg, c='#ff7f0e',label="Filtered EMG")
-plt.legend()
-plt.xlabel("Time")
-plt.ylabel("Amplitude")
 ```
 
 ![](docs/images/filt.png)
